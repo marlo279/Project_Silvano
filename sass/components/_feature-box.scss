@@ -1,0 +1,68 @@
+.feature-box {
+    background-color: rgba($color-white, .8);
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    transition: transform .3s;
+
+
+    &__textbox {
+        text-align: center;    
+        display: table-cell;
+        width: 24rem;
+        height: 15rem;
+        padding: 1rem;
+        vertical-align: middle;
+
+    }
+
+    &__icon {
+        font-size: 6rem;
+        margin-bottom: .5rem;
+
+        display: inline-block;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(
+            to right, 
+            $color-primary-light, 
+            $color-primary-dark); 
+        display: inline-block;
+    }
+
+
+    &__img {
+        background-size: cover;
+        background-blend-mode: screen;
+        height: 16rem;
+        
+
+        &--1 {
+            background-image: url(../img/feature/occhio-knip.png);
+        }
+
+        &--2 {
+            background-image: url(../img/feature/elettroagopuntura-knip.png);
+        }
+
+        &--3 {
+            background-image: url(../img/hero-small.jpg);
+        }
+
+        &--4 {
+            background-image: url(../img/feature/posturale-knip.png);
+        }
+
+        &:hover {
+            background-color: rgba($color-primary-light, .3);
+        }
+
+        
+
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+
+}
+
